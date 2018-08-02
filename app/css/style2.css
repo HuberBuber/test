@@ -1,0 +1,48 @@
+.main-wrapper {
+  width: 960px;
+  margin: 5px auto;
+  background-color: #fff;
+  font-family: Arial, san-serif;
+  font-size: 16px; }
+
+img {
+  width: 100%; }
+
+.logo {
+  float: left; }
+  .logo img {
+    width: 400px; }
+
+nav {
+  float: right;
+  margin-top: 170px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px; }
+  nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 0 58px;
+    color: #30BDD3; }
+    nav a:hover {
+      color: #000; }
+
+.toolbar {
+  clear: both;
+  margin-left: 765px; }
+  .toolbar input {
+    height: 30px;
+    width: 180px;
+    padding-left: 10px;
+    color: #30BDD3;
+    font-size: 15px;
+    border: 1px solid #30BDD3; }
+
+.post-list article {
+  display: inline-block;
+  width: 45%;
+  margin: 20px 10px;
+  padding: 10px;
+  background-color: #EFEFEF;
+  float: left; }
