@@ -15,25 +15,26 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 }
-img{
-	width: 100%; 
+
+@mixin headers{
+	text-align: right;
+	text-transform: uppercase;
+	color: $buttonColor;
 }
+
 body{
 	background-color: $contentBackground;
 }
-
-.main-wrapper {
-	width: 960px;
-	margin: 5px auto;
-	
-	font-family: $fonts;
-	font-size: 16px;
-	color: $textColor;
-}
 img{
 	width: 100%; 
 }
-
+.main-wrapper {
+	width: 960px;
+	margin: 5px auto;
+	font-family: $fonts;
+	font-size: 17px;
+	color: $textColor;
+}
 .logo{
 	float: left;
 	img{
@@ -42,16 +43,15 @@ img{
 }
 nav{
 	float: right;
-	margin-top: 170px;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	padding: 15px;
-
+	margin-top: 165px;
+	border-top: 1px solid $borderColor;
+	border-bottom: 1px solid $borderColor;
+	padding: 18px;
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
-		font-size: 17px;
-		padding: 0 54px;
+		font-size: 19px;
+		padding: 0 50px;
 		color: $menuColor;
 		&:hover{
 			color: #000;
@@ -69,6 +69,8 @@ nav{
 		color: $menuColor;
 		font-size: 15px;
 		border: 1px solid $menuColor;
+		background-color: $contentBackground;
+		
 	}
 }
 
@@ -101,6 +103,7 @@ nav{
 	padding: 5px 15px 10px 15px;
   font-size: 13px; 
   border-bottom: 1px solid $textColor;
+  color: $borderColor;
 }
 
 h3{
@@ -114,9 +117,7 @@ h3{
 .about{
 	margin-top: 60px;
 	h1{
-		text-align: right;
-		text-transform: uppercase;
-		color: $buttonColor;
+		@include headers;
 	}
 	p{
 		line-height: 1.5;
@@ -128,21 +129,20 @@ h3{
 		margin-top:20px;
 	}
 }
+
 .contact-form{
 	margin-top: 40px;
 	h1, h4{
-		text-transform: uppercase;
-		color:  $buttonColor;
-		text-align: right;
+		@include headers;
 	}
 	.input, textarea{
 		display: block;
 		width: 97%;
 		margin: 20px 0;
 		padding: 12px;
-		font-family: $fonts;
+		font-family: Arial, san-serif;
 		font-size: 15px;
-		border: 1px solid $textColor;
+		border: 1px solid $borderColor;
 	}
 	.button{
 		text-align: right;
@@ -156,10 +156,12 @@ h3{
 			&:hover{
 				background-color: $textColor;
 				border: 1px solid $textColor;
+				cursor: pointer;
 			}
 		}
 	}
 }
+
 footer{
 	font-size: 14px;
 	margin-top: 10px;

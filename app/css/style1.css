@@ -16,24 +16,20 @@ time, mark, audio, video {
   border: 0;
 }
 
-img {
-  width: 100%;
-}
-
 body {
   background-color: #fff;
+}
+
+img {
+  width: 100%;
 }
 
 .main-wrapper {
   width: 960px;
   margin: 5px auto;
   font-family: Arial, san-serif;
-  font-size: 16px;
+  font-size: 17px;
   color: #658392;
-}
-
-img {
-  width: 100%;
 }
 
 .logo {
@@ -46,17 +42,17 @@ img {
 
 nav {
   float: right;
-  margin-top: 170px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 15px;
+  margin-top: 165px;
+  border-top: 1px solid #658392;
+  border-bottom: 1px solid #658392;
+  padding: 18px;
 }
 
 nav a {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 17px;
-  padding: 0 54px;
+  font-size: 19px;
+  padding: 0 50px;
   color: #30BDD3;
 }
 
@@ -76,6 +72,7 @@ nav a:hover {
   color: #30BDD3;
   font-size: 15px;
   border: 1px solid #30BDD3;
+  background-color: #fff;
 }
 
 .post-list {
@@ -112,6 +109,7 @@ nav a:hover {
   padding: 5px 15px 10px 15px;
   font-size: 13px;
   border-bottom: 1px solid #658392;
+  color: #658392;
 }
 
 h3 {
@@ -149,9 +147,9 @@ h3 {
 }
 
 .contact-form h1, .contact-form h4 {
+  text-align: right;
   text-transform: uppercase;
   color: #1FBCD3;
-  text-align: right;
 }
 
 .contact-form .input, .contact-form textarea {
@@ -180,6 +178,7 @@ h3 {
 .contact-form .button input:hover {
   background-color: #658392;
   border: 1px solid #658392;
+  cursor: pointer;
 }
 
 footer {
