@@ -1,141 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="css/style1.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/style2.css"> -->
-  <title>Travel blog</title>
+  <title>CSS Layouts</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-  <div class="main-wrapper">
-    <header>
-      <div class="logo">
-        <img src="img/baloon.png" alt="logo">
-      </div>
-      <nav>
-        <a role="button" href="#list" target="_self">Blog</a>
-        <a role="button" href="#about" target="_self">About</a>
-        <a role="button" href="#contact" target="_self">Contact</a>
-      </nav>
-    </header>
-    <div class="toolbar">
-      <input type="text" placeholder="Search">
-    </div>
-    <div class="post-list" id="list">
-      <article>
-        <img src="img/post-1.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 &#8226; 2 min
-          </div>
-          <h3>Outdoor cooking hacks</h3>
-          <p>Head off the beaten track and into the Alaskan wilderness in search of adventure, epic landscapes and unforgettable
-            wildlife encounters on this small group guided holiday.</p>
-        </div>
-      </article>
-      <article>
-        <img src="img/post-2.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 &#8226; 10 min
-          </div>
-          <h3>Picture perfect campsites</h3>
-          <p>Pass nine nights travelling around the Azores island ‘triangle’ of Faial, São Jorge and Pico. Guided day tours
-            will show you all the highlights from these magical islands</p>
-          <p>Escape the winter crowds and seek out one of nature’s most fabulous show, the Aurora Borealis, at Torassieppi,
-            in breath-taking Finnish Lapland.</p>
-          <p>Explore the national parks of western USA including the Grand Canyon </p>
-        </div>
-      </article>
-      <article>
-        <img src="img/post-3.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 &#8226; 15 min
-          </div>
-          <h3>How to plan your cross country roadtrip</h3>
-          <p>A taste of Brazil and an exciting overland journey through French Guiana, Suriname and Guyana. This trip encompasses
-            some of the richest wildlife and unique landscape in South America. </p>
-        </div>
-      </article>
-      <article>
-        <img src="img/post-4.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 &#8226; 20 min
-          </div>
-          <h3> The best festivals in the world</h3>
-          <p>Escape the winter crowds and seek out one of nature’s most fabulous show, the Aurora Borealis, at Torassieppi,
-            in breath-taking Finnish Lapland.</p>
-        </div>
-      </article>
-      <article>
-        <img src="img/post-5.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 &#8226; 28 min
-          </div>
-          <h3>Winter escapes</h3>
-          <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience
-            to continue reading. Welcome to blog post.</p>
-        </div>
-      </article>
-      <article>
-        <img src="img/post-6.jpg" alt="">
-        <div>
-          <div class="post-description">
-            Admin Jul 25 42 min
-          </div>
-          <h3>This year’s #1 travel destination</h3>
-          <p>Escape the winter crowds and seek out one of nature’s most fabulous show, the Aurora Borealis, at Torassieppi,
-            in breath-taking Finnish Lapland.</p>
-        </div>
-      </article>
-    </div>
-    <section class="about" id="about">
-      <div>
-        <h1>Who am I</h1>
-        <p>
-          I’m a self-made billionaire inventor, I’ve worked at NASA and CERN. Explored 8 continents including Atlantis. Won 2 Nobel
-          prizes, a Pulitzer, six Grammys and People magazine’s sexiest man alive 3 years running. I’m currently working
-          on developing cold fusion reactors that will provide free clean, sustainable energy to all mankind for centuries
-          ahead.
-        </p>
-        <p>Oh, and I also take photos in my spare time.</p>
-        <p>At least this is how I’d like my bio to read. :-)</p>
-        <p>Truth is that I have a very cool job. Over the last fifteen years, I have shot commercial lifestyle images for stock
-          photography agencies such as Jupiterimages, Corbis, and Getty Images. I’ve been lucky to work with some amazing
-          people, both at these agencies and on my teams of models, producers, stylists, and assistants. I’ve had my photos
-          published for editorial and commercial purposes all over the world and have had some great commercial clients along
-          the way as well. In the last five years, I switched to shooting travel images and fell in love with photography
-          all over again.</p>
-      </div>
-      <div>
-        <img src="img/about-section.jpg" alt="">
-      </div>
-    </section>
-    <section class="contact-form" id="contact">
-      <h1>CONTACT ME</h1>
-      <h4>For any questions you may have, you can reach me here:</h4>
-      <!-- TODO: write form fields -->
-      <form action="">
-        <input type="text" class="input" placeholder="Name" required></input>
-        <input type="email" class="input" placeholder="Email" required></input>
-        <input type="text" class="input" placeholder="Subject" required></input>
-        <textarea name="text" cols="20" rows="9" placeholder="Message"></textarea>
-        <div class="button">
-          <input type="submit" value="Send"></input>
-        </div>
-      </form>
-    </section>
-    <footer>
-      <span>&#169; 2018 by NOMAD ON THE ROAD.</span>
-    </footer>
-  </div>
-</body>
+  
+    <header class="main-header">
+		<div class="container grid spec-grid">
+			<div class="container-menu grid">
+				<div class="logo">
+					<h5>Black &amp; White</h5>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Vacancies</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-name">
+				<h1>Black <span>&amp;</span> White<span>&trade;</span></h1>
+				<p>An original brand since 1965</p>
+			</div>
+			<div class="header-button">
+				<a href="#" class="btn">Read More</a>
+			</div>
+		</div>
+	</header>
 
+	<section class="text-wrapper">
+		<div class="container grid">
+			<div class="ready-left">
+				<p>Lorem ipsum dolor, consectetur adipisicing. Aenean <span>commodo ligula</span> eget dolor</p>
+			</div>
+			<div class="ready-right">
+				<p>Lorem ipsum dolor, consectetur adipisicing. Suscipit, placeat! Laboriosam impedittenetur, iusto deserunt sint qui possimus inventore perspiciatis voluptatibus incidunt,fugit in. Quisquam fugit dolorum quibusdam, iste quis. Lorem ipsum dolor, consecteturadipisicing.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="image-wrapper">
+		<div class="container">
+			<div class="title-section">
+				<h2>Read some of our <span>featires articles</span></h2>
+			</div>
+			
+			<div class="image-block grid">
+				<div class="block-item grid">
+					<div class="img-shadow">
+						<p>Januari'15 <b>South France</b> </p>
+						<span class="heart">172 <i class="fas fa-heart"></i></span>
+					</div>
+				</div>
+
+				<div class="block-item grid">	
+					<div class="img-shadow2">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestiae quidem obcaecati ex repellendus non harum corporis quam labore eos aliquam aspernatur quaerat, voluptas expedita laboriosam est recusandae esse laborum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-item grid">
+					<div class="img-shadow2">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestiae quidem obcaecati ex repellendus non harum corporis quam labore eos aliquam aspernatur quaerat, voluptas expedita laboriosam est recusandae esse laborum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-item grid">
+					<div class="img-shadow3">
+						<p>Januari'15 <b>South America</b> </p>
+						<span class="heart">313 <i class="fas fa-heart"></i></span>
+					</div>
+				</div>
+
+				<div class="block-item grid">
+					<div class="img-shadow">
+						<p>Januari'15 <b>South France</b> </p>
+						<span class="heart">172 <i class="fas fa-heart"></i></span>
+					</div>
+				</div>
+
+				<div class="block-item grid">	
+					<div class="img-shadow2">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestiae quidem obcaecati ex repellendus non harum corporis quam labore eos aliquam aspernatur quaerat, voluptas expedita laboriosam est recusandae esse laborum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-item grid">
+					<div class="img-shadow2">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestiae quidem obcaecati ex repellendus non harum corporis quam labore eos aliquam aspernatur quaerat, voluptas expedita laboriosam est recusandae esse laborum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-item grid">
+					<div class="img-shadow3">
+						<p>Januari'15 <b>South America</b> </p>
+						<span class="heart">313 <i class="fas fa-heart"></i></span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="form-section">
+				<form class="grid">
+					<div class="form-title">
+						<h2>Subscribe to our newsletter</h2>
+					</div>
+					<div class="form-input">
+						<input type="email" placeholder="Enter your e-mail address">
+					</div>
+					<div class="form-button">
+						<input type="button" value="Subscribe" >
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="info-wrapper">
+		<div class="container">
+			<div class="inform-block grid">
+				<div class="info-content grid">
+					<h3>Black <span>&amp;</span> White</h3>
+					<p>consequuntur magni dolores atione voluptatem sequi nesc ue porro quisquam est, qui d sum quia dolor sit amet, cons sum quia sum quia</p>
+				</div>
+				<div class="info-content grid">
+					<h3>Contact</h3>
+					<p><a href="#">www.loremipsumdolar.ni</a></p>
+					<p>182 AB Pasichna street</p>
+					<p>email@loremipsum.com</p>
+					<p>+(121) 01 23 45 679</p>
+					
+					
+				</div>
+				<div class="info-content grid">
+					<h3>Latest tweet</h3>
+					<p>
+						"...aerat vluptatem. Ut eni et illi dolore magnam aliqua et aerat volptatem. Utils eni tils et al is minima veniam."
+					</p>
+					<p><span>3 ours ago</span></p>
+				</div>
+				<div class="info-content grid">
+					<h3>Newsletter</h3>
+					<p>Neque porro quisquam eist, im ipsum quia dolor sit amettur, adipisci velit,</p>
+
+					<div class="info-form">
+						<input type="email" class="bottom-email" placeholder="Email adress">
+						<input type="button" class="bottom-button" value="Subscribe" >
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; Ruben Storm</p>
+			<nav class="footer-menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Vacancies</a></li>
+					</ul>
+				</nav>
+		</div>
+	</footer>
+
+</body>
 </html>
