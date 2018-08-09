@@ -38,22 +38,19 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, a, input {
   margin-left: 15px;
   margin-top: 45px;
   text-transform: uppercase;
-  justify-self: start;
 }
 
 .logo h5 {
   letter-spacing: 3px;
   font-weight: normal;
   font-size: 14px;
-}
-
-.main-menu {
-  justify-self: end;
+  text-align: start;
 }
 
 .main-menu ul {
   margin-top: 31px;
   margin-right: 10px;
+  text-align: end;
 }
 
 .main-menu ul li {
@@ -277,12 +274,11 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, a, input {
   margin-top: 60px;
   margin-bottom: 10px;
   background: #fff;
-  justify-items: center;
   align-items: center;
 }
 
 .form-title {
-  justify-self: center;
+  text-align: center;
 }
 
 .form-title h2 {
@@ -291,10 +287,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, a, input {
 
 .form-title h2 span {
   font-weight: bold;
-}
-
-.form-input {
-  justify-self: stretch;
 }
 
 .form-input input {
@@ -313,10 +305,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, a, input {
 .form-input input::placeholder {
   font-weight: 600;
   color: #000;
-}
-
-.form-button {
-  justify-self: start;
 }
 
 .form-button input {
@@ -340,10 +328,6 @@ body, p, h1, h2, h3, h4, h5, h6, ul, li, a, input {
   grid-template-columns: 1fr 1fr 1fr 1.5fr;
   padding: 120px 0;
   border-bottom: 3px solid #E8E8E8;
-}
-
-.info-content {
-  align-self: start;
 }
 
 .info-content h3 {
